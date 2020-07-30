@@ -31,23 +31,4 @@ def merge_sort(arr)
 
 end
 
-p merge_sort([1,3,4,7, 5, 0, 2,11,6, 9, 901, 200]), "hi"
-
-
-def push_to_arr(a, b, sort = [])
-    return sort if a[0] == nil && b[0] == nil
-    if a[0] < b[0]
-        sort << a[0]
-        sort << b[0]
-    else
-        sort << b[0]
-        sort << a[0]
-    end
-     push_to_arr(a[1..-1], b[1..-1], sort)
-end
-
-p push_to_arr([1,3,4], [2,5,7])
-
-
-
-p q_sort(merge([1,3,4,7, 5, 2,11,6, 9,201,900]))
+p merge_sort([1,3,4,7, 5, 0, 2,11,6, 9, 901, 200])
